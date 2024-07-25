@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/search_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:context=".SearchActivity">
+        <include layout="@layout/icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/SearchActivity_header"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/idSearchPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:hint="@string/SearchActivity_getID"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="?attr/colorSecondary"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/searcher"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/SearchActivity_search" />
+
+        <include layout="@layout/button_back"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>

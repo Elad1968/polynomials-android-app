@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Polynomials</string>
+
+    <string name="Activity_back">Back</string>
+
+    <string name="MainActivity_insert">Add new / Update existing</string>
+    <string name="MainActivity_browse">Browse all</string>
+    <string name="MainActivity_search">Search By ID</string>
+
+    <string name="InsertActivity_header">Insert By ID</string>
+    <string name="InsertActivity_getID">ID to insert (Leave blank for the minimum ID.)</string>
+    <string name="InsertActivity_getFunction">Polynomial to insert</string>
+    <string name="InsertActivity_insert">Insert</string>
+    <string name="InsertActivity_help">
+        Write your polynomial like this:\n
+        a₁x^p₁ ± … ± aₙx^pₙ\n
+        For example:\n
+        3x^2 – 8.7x + 5.5
+    </string>
+
+    <string name="BrowseActivity_header">All polynomials</string>
+    <string name="BrowseActivity_deleteAll">Delete All</string>
+
+    <string name="SearchActivity_header">Search By ID</string>
+    <string name="SearchActivity_getID">ID to Search</string>
+    <string name="SearchActivity_search">Search</string>
+
+    <string name="ViewActivity_header">Polynomial #%d</string>
+    <string name="ViewActivity_powerColumnHeader">Power</string>
+    <string name="ViewActivity_powerColumnCoefficient">Coefficient</string>
+    <string name="ViewActivity_update">Update</string>
+    <string name="ViewActivity_derivative">Derivative</string>
+    <string name="ViewActivity_integral">Integral</string>
+    <string name="ViewActivity_calculate">Calculate</string>
+    <string name="ViewActivity_delete">Delete</string>
+    <string name="ViewActivity_add">Add</string>
+    <string name="ViewActivity_subtract">Subtract</string>
+    <string name="ViewActivity_multiply">Multiply</string>
+    <string name="ViewActivity_copy">Copy to ID</string>
+    <string name="ViewActivity_move">Move to ID</string>
+    <string name="BrowseActivity_empty">You don\'t have any polynomials stored at the moment.</string>
+</resources>

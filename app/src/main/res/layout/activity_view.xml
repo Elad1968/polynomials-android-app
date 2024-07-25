@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/view_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ViewActivity">
+
+        <TextView
+            android:id="@+id/view_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/ViewActivity_header"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/view_function"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textIsSelectable="true"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp"
+            android:showDividers="middle"
+            android:textSize="16sp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableHeader"
+                android:background="?attr/colorPrimary"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="@string/ViewActivity_powerColumnHeader"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="@string/ViewActivity_powerColumnCoefficient"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+        </TableLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/chart"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:gravity="center">
+            <Button
+                android:id="@+id/update"
+                android:layout_height="wrap_content"
+                android:layout_width="192dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:text="@string/ViewActivity_update" />
+
+            <Button
+                android:id="@+id/copy"
+                android:layout_width="192dp"
+                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ViewActivity_copy" />
+
+            <Button
+                android:id="@+id/derivative"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ViewActivity_derivative" />
+
+            <Button
+                android:id="@+id/integral"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ViewActivity_integral" />
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ViewActivity_calculate" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ViewActivity_add" />
+
+            <Button
+                android:id="@+id/subtract"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ViewActivity_subtract" />
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ViewActivity_multiply" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#B00020"
+                android:textColor="@color/background"
+                android:text="@string/ViewActivity_delete" />
+
+            <include layout="@layout/button_back"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </GridLayout>
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
