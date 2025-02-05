@@ -110,7 +110,8 @@ public class ViewActivity extends AppCompatActivity {
             function.setText(polynomial.toString());
             updateTableLayout(polynomial);
         } catch (Exception exception) {
-            GUI.showError(this, exception.getMessage(), true);
+            GUI.showError(this, "Could not find the polynomial to display.", true);
+            return;
         }
         displayGraph();
     }
