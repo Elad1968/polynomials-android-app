@@ -1,4 +1,4 @@
-package com.eladoreltamir.polynomials;
+package com.eladhuttner.polynomials;
 
 import android.app.Activity;
 

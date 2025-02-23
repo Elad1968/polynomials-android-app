@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.eladoreltamir.polynomials"
+    namespace = "com.eladhuttner.polynomials"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.eladoreltamir.polynomials"
+        applicationId = "com.eladhuttner.polynomials"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
