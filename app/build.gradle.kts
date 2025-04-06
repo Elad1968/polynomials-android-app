@@ -42,3 +42,8 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation(libs.mpAndroidChart)
 }
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
